@@ -1,0 +1,23 @@
+meta {
+  name: Create Notes
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3003/meetingNotes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "title": "Meeting ession",
+      "content": "Implement the business analysis charts",
+      "actionItems": [
+        "Carlos to draft the social media promotion plan"
+      ],
+      "createdDate": "2024-03-05T00:00:00.000Z"
+    }
+  
+}
